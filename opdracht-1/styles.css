@@ -17,8 +17,12 @@ Table of contents:
         donkergrijs 	hsl(0, 0%, 83%)
  */
 
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', Arial, sans-serif;
 }
 
 .recipe-card {
@@ -26,9 +30,47 @@ body {
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
-    border-radius: 10%;
-    border: 5px hsl(0, 0%, 83%);
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 83%);
     box-shadow: 0 8px 24px rgb(0, 0, 0, 0.10);
+    overflow: hidden;
+    position: relative;
+}
+
+.recipe-image {
+width: 100%;
+}
+
+.recipe-details {
+    background-color: hsl(0, 0%, 97%);
+    padding-block: 5px;
+    margin-top: -7px;
+}
+
+.recipe-detail-item {
+    margin-inline: 8px;
+    font-size: 14px;
+}
+
+.detail-icon {
+    height: 12px;
+    margin-inline: 5px;
+}
+
+/*
+    2. Typography
+ */
+
+.h2 {
+    font-size: 1em;
+    margin: 20px;
+}
+
+.fav-icon {
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 /* - Vul dit document aan met jouw eigen css! - */
